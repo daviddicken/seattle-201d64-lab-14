@@ -40,10 +40,15 @@ createRow.appendChild(createCell);
 
 function removeItemFromCart(event) {
 
+
+
+
+  
   // TODO: When a delete link is clicked, use cart.removeItem to remove the correct item
   // TODO: Save the cart back to local storage
   // TODO: Re-draw the cart table
-
+  
+  renderCart();
 }
 
 // This will initialize the page and draw the cart on screen
