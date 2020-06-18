@@ -11,6 +11,10 @@ Cart.prototype.addItem = function(product, quantity) {
 };
 
 Cart.prototype.saveToLocalStorage = function() {
+  var cartItemsForStorage = JSON.stringify(Product.allProducts);
+
+  localStorage.setItem('stringyProduct', cartItemsForStorage);
+
   // TODO: Fill in this instance method to save the contents of the cart to localStorage
 };
 
