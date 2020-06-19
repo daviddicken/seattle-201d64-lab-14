@@ -6,18 +6,17 @@ var Cart = function(items) {
   this.items = items;
 };
 
+var itemStorage = new Cart(4);
+  //this.items.push(itemStorage);
+
+
 Cart.prototype.addItem = function(product, quantity) {
   // TODO: Fill in this instance method to create a new CartItem and add it to this.items
-  var product = 'bananas';
-  var quantity = 4;
-  var cartItem = new CartItem(product, quantity);
-
-  Cart.items.push(this);
-  console.log('cartItems',cartItem);
-  console.log('itemsArray', Cart.items);
+  //
+  
 
 };
-Cart.prototype.addItem('cart', 4);
+
 Cart.prototype.saveToLocalStorage = function() {
   var cartItemsForStorage = JSON.stringify(Product.allProducts);
 
@@ -35,6 +34,9 @@ var CartItem = function(product, quantity) {
   this.product = product;
   this.quantity = quantity;
 };
+
+
+
 
 // Product contructor.
 var Product = function(filePath, name) {
