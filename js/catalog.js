@@ -28,10 +28,12 @@ function populateForm() {
 // object, save the whole thing back to local storage and update the screen
 // so that it shows the # of items in the cart and a quick preview of the cart itself.
 function handleSubmit(event) {
-
-  var cartProduct = event.target.items.value;
-  var cartQuantity = event.target.quantity.value;
-  console.log(cartProduct, cartQuantity);
+  event.preventDefault();
+  
+  
+  // var cartProduct = event.target.items.value;
+  // var cartQuantity = event.target.quantity.value;
+  // console.log(cartProduct, cartQuantity);
   // TODO: Prevent the page from reloading
 
   // Do all the things ...
